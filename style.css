@@ -23,7 +23,7 @@ header {
     height: 70px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     align-content: stretch;
     gap: 500px;
@@ -98,6 +98,38 @@ header {
     display: none;
   }
 
-  footer {
-    display: none;
+  .footer {
+    position:fixed;
+    bottom:0px;
+    width:1728px;
+    background-color:#000;
+    color:#fff;
+  }
+
+  .footertop {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap:1000px;
+    align-items: center;
+    align-content: stretch;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+  }
+
+  footer .social {
+    width:400px;
+    padding-left:50px;
+  }
+
+  footer p {
+    padding-right:50px;
+  }
+
+  footer .logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align:left;
+    padding-left:50px;    
   }

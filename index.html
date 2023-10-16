@@ -5,11 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="script.js" defer></script>
     
     
 </head>
 <body>
+
+    <header> <!-- Header Div -->
+        <div class="container"> <!-- Container within the header to hold content, all content inside here will be styled using flexbox columns-->
+            <span class="logo">Logo</span>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </nav>
+            <span>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </span>
+        </div>
+    </header>
+
+    <section class="section bg-gray"> <!-- First section holder -->
+        <div class="container"> <!-- Content holder within the section -->
+        <!-- Section content -->
+          <h1>.coder</coder></h1>
+          <img src="#">
+          <h1>.teacher</h1>
+          <h3>Lorem ipsum dolor sit amet. Ut accusantium animi aut recusandae quisquam non nihil temporibus et tenetur excepturi id sunt amet. Sit voluptatibus dolor sit doloremque distinctio et velit molestiae? Et consequatur omnis et culpa omnis et molestiae provident.</h3>
+          <a class="button" href="#">Projects</a>
+        </div>
+      </section>
+
+      <section class="section bg-white"> <!-- Second section holder -->
+        <div class="container"> <!-- Content holder within the section -->
+            <!-- Section content -->
+          <div class="columns">
+            <div class="column">
+              <h2>Heading</h2>
+              <p>Et iusto officiis vel iure velit et doloremque facere qui sint sunt hic velit consequatur nam eius perferendis. Hic veniam voluptas a nihil dolore ex quas doloremque</p>
+              <a class="button" href="#">Learn more</a>
+            </div>
+            <div class="column">
+                <h2>Heading</h2>
+                <p>Et iusto officiis vel iure velit et doloremque facere qui sint sunt hic velit consequatur nam eius perferendis. Hic veniam voluptas a nihil dolore ex quas doloremque</p>
+                <a class="button" href="#">Learn more</a>
+            </div>
+            <div class="column">
+                <h2>Heading</h2>
+                <p>Et iusto officiis vel iure velit et doloremque facere qui sint sunt hic velit consequatur nam eius perferendis. Hic veniam voluptas a nihil dolore ex quas doloremque</p>
+                <a class="button" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section> <!-- Section to hold contact form -->
+        <div class="container"> 
+            <form class="form-grid">
+      
+              <label for="name">Name</label>
+              <input type="text" id = "name"/>
+              
+              <label for="email">Email</label>
+              <input type="email" id = "email"/>
+      
+              <label for="message">Message</label>
+              <textarea id = "message"></textarea>
+              
+              <span></span>
+              <div>
+                  <p class="error">Please complete all fields</p>
+                  <input type="submit" value ="Submit" class="submit" />
+              </div>
+            </form>
+          </div>
+      </section>
+      
     
 </body>
+
+<footer class="footer"> <!-- Footer -->
+    <span class ="logo">Logo</span>
+    <span></span>
+    <i class="fa-brands fa-square-facebook"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <span></span>
+    <p> © Copyright 2023</p>
+  </footer>
 </html>

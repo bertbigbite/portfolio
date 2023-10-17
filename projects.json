@@ -21,5 +21,13 @@
         "image": "profile.png",
         "url": "#",
         "git": "#"
+    },
+
+    {
+        "name": "Project four",
+        "desc": "This is project one. It's a project that I worked on",
+        "image": "profile.png",
+        "url": "#",
+        "git": "#"
     }
   ]

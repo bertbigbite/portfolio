@@ -1,0 +1,25 @@
+[
+    {
+      "name": "Project One",
+      "desc": "This is project one. It's a project that I worked on",
+      "image": "profile.png",
+      "url": "#",
+      "git": "#"
+    },
+    
+    {
+        "name": "Project Two",
+        "desc": "This is project one. It's a project that I worked on",
+        "image": "#",
+        "url": "#",
+        "git": "#"
+    },
+    
+    {
+        "name": "Project Three",
+        "desc": "This is project one. It's a project that I worked on",
+        "image": "profile.png",
+        "url": "#",
+        "git": "#"
+    }
+  ]

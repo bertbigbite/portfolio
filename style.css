@@ -4,7 +4,7 @@
   } 
 html, body {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   margin: 0;
 }
@@ -356,88 +356,84 @@ header {
   
 
 .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 450px;
+  padding: 1.3rem;
+  min-height: 250px;
   position: fixed;
-  width: 800px;
-  top: 150px;
-  right: calc(50% - 400px);
-  background: #ffffff;
-  padding: 25px;
-  box-shadow: 3px 3px 5px 0px #343a40;
+  top: 20%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  z-index: 2;
+  transform: translate(1200px, 200px);
+}
+
+.hidden {
   display: none;
 }
 
-.modal.open {
-    display: none;
-    background: #ffffff;
-  
-  }
-  
-  .modal.close {
-    display: block;
-    background: #ffffff;
-  
-  }
-  
-  .modal header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 25px;
-  }
-  
-  .modal .modal_body {
-    padding-top: 30px;
-  
-  }
-  
-  .modal header span {
-    cursor: pointer;
-    text-align: right;
-    padding-right: 50px;
-  }
-  
-  .modal header h2 {
-    margin-top: 0px;
-  }
-  
-  .modal p small {
-    color: red;
-  }
-  
-  .modal .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .modal .form-group label {
-    display: block;
-    margin-bottom: 3px;
-  }
-  
-  .modal .form-group label span {
-    color: red;
-  }
-  
-  .modal .form-group input[type=text],
-  .modal .form-group input[type=email],
-  .modal .form-group textarea {
-    width: 100%;
-    padding: 5px 8px;
-    border-radius: 5px;
-  }
-  
-  .modal .form-group small {
-    display: block;
-    margin-top: 3px;
-    font-style: italic;
-  }
-  
-  .modal .form-group small.error {
-    color: red;
-  }
-  
-  .modal .button:disabled {
-    background: grey;
-    color: #dddddd;
-  } 
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.modal input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
 
-  
+.modal p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.4rem 0 0.2rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-open {
+  position: absolute;
+  bottom: 480px;
+  left: 955px;
+}
+
+.btn-close {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  background: #eee;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 239, 240, 0.5);
+  backdrop-filter: blur(0.5px);
+  z-index: 1;
+}

@@ -8,16 +8,18 @@ fetch('projects.json').then(function (response) {
     projects.forEach(projects =>{
         contents += `<div class='project_container'>
             <h1>${projects.name}</h2>
+            <img src=${projects.image}></img>
             <p>${projects.desc}</p>
-            <img>${projects.image}</img>
-            <a>${projects.url}</a>
-            <a>${projects.git}</a>
+            <br>
+            <div class="jsonlinks">
+            <a class="url">${projects.url}</a>
+            <a href="https://github.com/bertbigbite/portfolio" class="git">${projects.git}</a>
+            </div>
         </div>`
         console.log(contents);
     })
 contents += "</div>";
 
     itemsDiv.innerHTML = contents;
-
 
 })

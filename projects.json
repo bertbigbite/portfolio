@@ -2,32 +2,27 @@
     {
       "name": "Project One",
       "desc": "This is project one. It's a project that I worked on",
-      "image": "profile.png",
-      "url": "#",
-      "git": "#"
+      "image": "thumbnail1.png",
+      "url": "<i class='fa-solid fa-globe'></i>",
+      "git": "<i class='fa-brands fa-square-github'></i>"
     },
     
     {
         "name": "Project Two",
         "desc": "This is project one. It's a project that I worked on",
-        "image": "#",
-        "url": "#",
-        "git": "#"
+        "image": "thumbnail2.png",
+        "url": "<i class='fa-solid fa-globe'></i>",
+        "git": "<i class='fa-brands fa-square-github'></i>"
     },
     
     {
         "name": "Project Three",
         "desc": "This is project one. It's a project that I worked on",
-        "image": "profile.png",
-        "url": "#",
-        "git": "#"
-    },
-
-    {
-        "name": "Project four",
-        "desc": "This is project one. It's a project that I worked on",
-        "image": "profile.png",
-        "url": "#",
-        "git": "#"
+        "image": "thumbnail3.png",
+        "url": "<i class='fa-solid fa-globe'></i>",
+        "git": "<i class='fa-brands fa-square-github'></i>"
     }
+
+       
+    
   ]

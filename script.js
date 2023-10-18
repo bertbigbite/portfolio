@@ -11,11 +11,12 @@ fetch('projects.json').then(function (response) {
 // Add the .project_container class to the contents variable and then in turn each element of the object, iterating for every instance
         contents += `<div class='project_container'>
             <h1>${projects.name}</h2>
-            <img class='testimage' src=${projects.image}></img>
+            <img src=${projects.image}></img>
             <p>${projects.desc}</p>
             <br>
             <div class="jsonlinks">
             <a class="url">${projects.url}</a>
+            <a class="open-project">${projects.view}</a>
             <a href="https://github.com/bertbigbite/portfolio" class="git">${projects.git}</a>
             </div>
         </div>`
@@ -31,10 +32,15 @@ itemsDiv.innerHTML = contents;
 // Setting constants for the two main states for the modal
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
+const projectOne = document.querySelector(".project-one");
+
+
 
 // Setting constants for the open and close buttons
-const openModalBtn = document.querySelector(".fourth");
-const closeModalBtn = document.querySelector(".btn-close");
+const openContactBtn = document.querySelector(".fourth");
+const closeContactBtn = document.querySelector(".btn-close");
+const openContactBtnTwo = document.querySelector(".contact");
+const openProjectOneBtn = document.querySelector(".open-project");
 
 // Creating a function for opening the modal, removes the hidden classes to reveal the modal
 // Function used to apply class to multiple elements at a time
@@ -50,10 +56,16 @@ const closeModal = function () {
     overlay.classList.add("hidden");
   };
 
+  const openProject = function () {
+    projectOne.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  };
 // event listener, looking for the click, triggers the openModal function
-  openModalBtn.addEventListener("click", openModal);
+  openContactBtn.addEventListener("click", openModal);
 // event listener, looking for the click, triggers the closeModal function
-  closeModalBtn.addEventListener("click", closeModal);
+  closeContactBtn.addEventListener("click", closeModal);
+
+  openProjectOneBtn.addEventListener("click", openProject);
 
 
 

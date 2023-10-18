@@ -4,6 +4,7 @@
       "desc": "This is project one. It's a project that I worked on",
       "image": "thumbnail1.png",
       "url": "<i class='fa-solid fa-globe'></i>",
+      "view": "#",
       "git": "<i class='fa-brands fa-square-github'></i>"
     },
     
@@ -12,6 +13,7 @@
         "desc": "This is project one. It's a project that I worked on",
         "image": "thumbnail2.png",
         "url": "<i class='fa-solid fa-globe'></i>",
+        "view": "#",
         "git": "<i class='fa-brands fa-square-github'></i>"
     },
     
@@ -20,6 +22,7 @@
         "desc": "This is project one. It's a project that I worked on",
         "image": "thumbnail3.png",
         "url": "<i class='fa-solid fa-globe'></i>",
+        "view": "#",
         "git": "<i class='fa-brands fa-square-github'></i>"
     }
 

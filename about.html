@@ -17,24 +17,23 @@
         <div class="navigation">
             <span class="logo">Logo</span>
             <nav class="links">
-                <a href="index.html" class="first">Home</a>
-                <a href="about.html" class="second">About</a>
-                <a href="#" class="third">Portfolio</a>
-                <a href="#" class="fourth">Contact</a>
+                <a href="index.html" class="first" alt="Home">Home</a>
+                <a href="about.html" class="second" alt="About">About</a>
+                <a href="#" class="third" alt="Portfolio">Portfolio</a>
+                <a href="#" id="contactModal" class="fourth" alt="Contact">Contact</a>
             </nav>
             <span class="socials">
-                <a href="#" class="fa-brands fa-square-facebook"></a>
-                <a href="#" class="fa-brands fa-linkedin"></a>
+                <a href="#" class="fa-brands fa-square-facebook" alt="Facebook"></a>
+                <a href="#" class="fa-brands fa-linkedin" alt="Linkedin"></a>
             </span>
         </div>
     </header>
 
     <section class="section bg-gray"> <!-- First section holder -->
-        <div class="profile_container"> <!-- Content holder within the section -->
+        <div class="about_container"> <!-- Content holder within the section -->
             <!-- Section content -->
-            <h1 class="title coder">{coder}</coder></h1>
-            <div class="profileimage"><img src="profile.png"></img></div>
-            <h1 class="title teacher">teacher</h1> 
+            <h1 class="about.">about.</coder></h1>
+            <img src="profile.png"></img>
         </div>
         
     </section>
@@ -43,55 +42,67 @@
             <p>Lorem ipsum dolor sit amet. Ut accusantium animi aut recusandae quisquam non nihil temporibus et tenetur excepturi id sunt amet. Sit voluptatibus dolor sit doloremque distinctio et velit molestiae? Et consequatur omnis et culpa omnis et molestiae provident.</p>
         </div>
     </section>
+
+    <section class="holder">
+        <div class="holder_container">
+            <span></span>
+            <span class="title" alt="Here'some latest work">HERE'S SOME LATEST WORK</span>
+            <span></span>
+        </div>
+    </section>
         
     
 
+
+
     <section class="section bg-white"> <!-- Second section holder -->
-        
+        <div>
+
+
+        </div>
+    
     </section>
 
-    <div class="modal">
-        <header>
-            <h2>Get in touch</h2>
-            <span class="close"><i class="fas fa-window-close modal-toggle"></i></span>
-        </header>
-        <div class="modal_body">
-          <p>Fill out the form below and we will get in touch.</p>
-          <p><small>* required</small></p>
-          <form>
-            <div class="form-group">
-                <label for="name">Name<span>*</span></label>
-                <input type="text" id="name" name="name">
-                <small id="nameError">Minimum of 5 characters</small>
-            </div>
-        
-            <div class="form-group">
-                <label for="email">Email<span>*</span></label>
-                <input type="email" id="email" name="email">
-                <small id="emailError">Maximum of 255 characters</small>
-            </div>
-        
-            <div class="form-group">
-                <label for="reason">Reason for contacting us</label>
-                <textarea id="reason" name="reason" rows="4"></textarea>
-                <small id="reasonError">Minimum 50 characters, maximum of 500 characters</small>
-            </div>
-        
-            <div class="form-group">
-                <label><input type="checkbox" id="terms" name="terms"> Please accept our Terms & Conditions<span>*</span></label>
-                <small id="termsError">This checkbox must be ticked</small>
-            </div>
-        
-            <input type="submit" value="Send" class="button" id="submit" disabled>
-        
-          </form>
+    <section class="modal hidden">
+        <div class="flex">
+          <img src="contact.png" width="50px" height="50px" alt="user" />
+          <button class="btn-close">⨉</button>
         </div>
-      </div>  
+        <div>
+          <h3>Stay in touch</h3>
+          <p>
+            If you like what you see and would like to discuss more. Or if you would just like to connect, please get in touch!
+          </p>
+        </div>
+        <br>
+        <input type="email" id="email" placeholder="youremail@gmail.com" />
+        <button class="btnsubmit">Submit</button>
+      </section>
+      
+    <div class="overlay hidden"></div>
+    
+    <section class="project-one hidden">
+        <div class="flex">
+          <img src="contact.png" width="50px" height="50px" alt="user" />
+          <button class="btn-close">⨉</button>
+        </div>
+        <div>
+          <h3>Stay in touch</h3>
+          <p>
+            If you like what you see and would like to discuss more. Or if you would just like to connect, please get in touch!
+          </p>
+        </div>
+        <br>
+        <input type="email" id="email" placeholder="youremail@gmail.com" />
+        <button class="btnsubmit">Submit</button>
+      </section>
+
+    
     <footer class="footer"> <!-- Footer -->
         <div class="footertop">
             <span class ="logo">Logo</span>
             <a href="#">CV</a>
-            <a href="#">Contact</a>
+            <a href="#" class="contact">Contact</a>
             <span class="social">
                 <a class="fa-brands fa-square-facebook"></a>
                 <a class="fa-brands fa-linkedin"></a>
@@ -102,7 +113,10 @@
             <p> © Copyright 2023</p>
         </div>
     </footer>
-</body>
+
+    
+
+    </body>
 
 
 </html>

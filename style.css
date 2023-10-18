@@ -109,6 +109,21 @@ header {
     margin: 0 auto;
     text-align: center;
   }
+
+  .about_container {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    align-content:center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
   section.intro {
     display:block;
     width: 100%;
@@ -150,6 +165,16 @@ header {
     margin-top: 100px;
     text-shadow: 2px 2px 10px #898989a8;
   }
+
+  .about_container .title {
+    margin-top: 100px;
+    text-shadow: 2px 2px 10px #898989a8;
+  }
+
+  .about_container h1 {
+    font-size:100px;
+  }
+
   .profile_container .teacher {
     padding-left: 100px;
 
@@ -217,7 +242,7 @@ header {
     height: 100%;
     background-color: #ffffff;
     display:block;
-    height:1000px;
+    height:600px;
    
 }
 
@@ -276,7 +301,7 @@ header {
     font-size: 20px;
   }
 
-  .jsonlinks .url , .git {
+  .jsonlinks .url , .git , .open-project {
     color:#000;
   }
 
@@ -286,6 +311,10 @@ header {
   }
   
   .jsonlinks .git:hover {
+    color: #36e5fc;
+    transition: all 0.3s ease-in;
+  }
+  .jsonlinks .open-project:hover {
     color: #36e5fc;
     transition: all 0.3s ease-in;
   }
@@ -358,10 +387,11 @@ header {
 .modal {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 0.4rem;
   width: 450px;
   padding: 1.3rem;
+  height: 500px;
   min-height: 250px;
   position: fixed;
   top: 20%;
@@ -369,7 +399,8 @@ header {
   border: 1px solid #ddd;
   border-radius: 15px;
   z-index: 2;
-  transform: translate(1200px, 200px);
+  transform: translate(1200px, 150px);
+  filter: drop-shadow(0px 3px 10px #b4b4b4a8);
 }
 
 .hidden {
@@ -403,24 +434,55 @@ button {
 
 .btn {
   display: inline-block;
-  padding: 0.8rem 1.4rem;
+  padding: 0.2rem 0.8rem;
   font-weight: 700;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   color: white;
-  border-radius: 5px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1em;
+  animation: pulse 2s infinite;
+}
+
+.btnsubmit {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  font-weight: 700;
+  background-color: #36e5fc;
+  color: white;
+  border-radius: 20px;
   text-align: center;
   font-size: 1em;
 }
 
 .btn-open {
   position: absolute;
-  bottom: 480px;
-  left: 955px;
+  bottom: 521px;
+  left: 1023.5px;
+}
+
+
+.btntwo {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  font-weight: 700;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1em;
+  animation: pulse 2s infinite;
+}
+
+.btn-opentwo {
+  position: absolute;
+  bottom: 479px;
+  left: 960.5px;
 }
 
 .btn-close {
-  transform: translate(10px, -20px);
-  padding: 0.5rem 0.7rem;
+  transform: translate(0px, -10px);
+  padding: 0.5rem 0.8rem;
   background: #eee;
   border-radius: 50%;
 }
@@ -437,3 +499,62 @@ button {
   backdrop-filter: blur(0.5px);
   z-index: 1;
 }
+
+
+
+.project-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.4rem;
+  width: 450px;
+  padding: 1.3rem;
+  height: 500px;
+  min-height: 250px;
+  position: fixed;
+  top: 20%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  z-index: 2;
+  transform: translate(1200px, 150px);
+  filter: drop-shadow(0px 3px 10px #b4b4b4a8);
+}
+
+.hidden {
+  display: none;
+}
+
+.project-one .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+/* Keyframes for animations */
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+
+

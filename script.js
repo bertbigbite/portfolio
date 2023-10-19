@@ -3,11 +3,13 @@ fetch('projects.json').then(function (response) {
 }).then(function (projects){
 
     const itemsDiv = document.querySelector ('#name')
+    // Create a constant to store the first 3 items in the array
+    let randomNumber = (Math.random (projects))
     const sampleList = projects.slice(0,3);
     let contents = '';
   // Add the class .container to the variable contents.
     contents += "<div class='container'>";
-// Iterate through each of the elements within the array, adding each one for every item
+// Iterate through each of the elements within the constant sampleList, adding each one for every item
 sampleList.forEach(projects =>{
 // Add the .project_container class to the contents variable and then in turn each element of the object, iterating for every instance
         contents += `<div class='project_container'>

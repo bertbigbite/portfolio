@@ -32,70 +32,57 @@
     <section class="section bg-gray"> <!-- First section holder -->
         <div class="about_container"> <!-- Content holder within the section -->
             <!-- Section content -->
-            <div class="about" ><h1 class="title">portfolio.</coder></h1></div>
+            <div class="pageinfo" >
+                <h1 class="title">portfolio.</h1>
+                <h2 class="subtitle">Check out some of my latest work and designs.</h2>
+                <p class="pagedesc">I've created a range of solutions, for a range of projects, from teaching resources, to Digital Graphics and Websites, take a look. </p>
+            </div>
             <img src="images/aboutimage.png"></img>
         </div>
         
     </section>
     <section class="intro">
         <div class="info_container">
-            <p>Lorem ipsum dolor sit amet. Ut accusantium animi aut recusandae quisquam non nihil temporibus et tenetur excepturi id sunt amet. Sit voluptatibus dolor sit doloremque distinctio et velit molestiae? Et consequatur omnis et culpa omnis et molestiae provident.</p>
-        </div>
-    </section>
-
-    <section class="holder">
-        <div class="holder_container">
-            <span></span>
-            <span class="title" alt="Here'some latest work">HERE'S SOME LATEST WORK</span>
             <span></span>
         </div>
     </section>
-        
+
+    
     
 
-
-
-    <section class="section bg-white"> <!-- Second section holder -->
-        <div>
-
-
+    <section class="section bg-white portfolio"> <!-- Second section holder -->
+        <div class="container"> <!-- Content holder within the section -->
+            <!-- Section content -->
+            <div id ="name"></div>
         </div>
-    
     </section>
+    
+   
 
+    <!-- Contact Modal -->
     <section class="modal hidden">
         <div class="flex">
-          <img src="contact.png" width="50px" height="50px" alt="user" />
+          <img src="images/contact.png" width="50px" height="50px" alt="user" />
           <button class="btn-close">⨉</button>
         </div>
         <div>
           <h3>Stay in touch</h3>
-          <p>
-            If you like what you see and would like to discuss more. Or if you would just like to connect, please get in touch!
-          </p>
+          <p>If you like what you see and would like to discuss more. Or if you would just like to connect, please get in touch!</p>
         </div>
-        <br>
+        
+        <label for="name">Name</label>
+        <input type="text" id = "name"/>
         <input type="email" id="email" placeholder="youremail@gmail.com" />
+        <label for="message">Comments</label>
+        <textarea id = "message"></textarea>
+        <br>
         <button class="btnsubmit">Submit</button>
       </section>
       
     <div class="overlay hidden"></div>
-    
-    <section class="project-one hidden">
-        <div class="flex">
-          <img src="contact.png" width="50px" height="50px" alt="user" />
-          <button class="btn-close">⨉</button>
-        </div>
-        <div>
-          <h3>Stay in touch</h3>
-          <p>
-            If you like what you see and would like to discuss more. Or if you would just like to connect, please get in touch!
-          </p>
-        </div>
-        <br>
-        <input type="email" id="email" placeholder="youremail@gmail.com" />
-        <button class="btnsubmit">Submit</button>
-      </section>
+
+
+
 
     
     <footer class="footer"> <!-- Footer -->

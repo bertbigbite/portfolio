@@ -91,9 +91,6 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   gap:30px;
-  overflow: auto;
-  white-space: nowrap;
-  padding:10px;
 }
 
 .photos{
@@ -104,7 +101,6 @@ header {
   width: 600px;
   border-radius: 10px;
   margin:0 auto;
-  padding:10px;
   background-color: #ffffff;
   filter: drop-shadow(0px 0px 5px #898989a8);
 }
@@ -195,7 +191,7 @@ header {
 
   section.intro.portfolio {
     padding: 20px 0px;
-    margin-bottom: 20px;
+    margin-bottom:20px;
   }
 
   img {

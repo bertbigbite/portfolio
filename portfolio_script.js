@@ -1,3 +1,15 @@
+
+function buttonClick (e) {
+    let button = e.target;
+    
+    const item = document.getElementById(button.id)
+    item.classList.toggle('hidden')
+
+}
+
+
+
+
 fetch('projects.json').then(function (response) {
     return response.json()
 }).then(function (projects){
@@ -16,7 +28,7 @@ fetch('projects.json').then(function (response) {
             <br>
             <div class="jsonlinks">
             <a class="url">${projects.url}</a>
-            <a class="open-project">${projects.view}</a>
+            <button id class="show-item-info">${projects.view}</button>
             <a href="https://github.com/bertbigbite/portfolio" class="git">${projects.git}</a>
             </div>
         </div>`
@@ -66,3 +78,13 @@ const closeModal = function () {
   closeContactBtn.addEventListener("click", closeModal);
 
   openProjectOneBtn.addEventListener("click", openProject);
+
+
+
+
+
+  const buttons = document.querySelectorAll
+
+  buttons.forEach (function(buttton)) {
+    buttonClick.addEventListener('click' buttonClick)
+  }

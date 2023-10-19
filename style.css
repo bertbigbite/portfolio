@@ -20,18 +20,26 @@ header {
     height: 70px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    align-content: stretch;
+    align-content: center;
     gap: 500px;
     color: white;
    
   }
   .logo {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     text-align:left;
-    padding-left:50px;   
+    margin: auto;   
+  }
+  .navigation a {
+    color:#fff;
+    text-decoration: none;
+  }
+  .navigation a:hover {
+    color:#36e5fc;
+    text-decoration: none;
   }
   .navigation.links {
     width: 1000px;
@@ -110,7 +118,39 @@ header {
   margin: 0 auto;
   filter: drop-shadow(0px 0px 20px #898989a8);
 
+
 }
+.allaboutme {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap:5px;
+  padding: 80px 50px;
+  align-items: center;
+  align-content: center;
+  max-width:1200px;
+  margin:70px auto;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  height:100%;
+}
+
+
+.allaboutme p {
+  text-align: center;
+  padding:0px 0px;
+
+}
+
+.allaboutme h1 {
+  font-size: 100px;
+  margin:0px;
+  padding-top:100px;
+  padding
+}
+
+
+
 /* First section */
 .section.bg-gray {
     display:block;
@@ -238,7 +278,7 @@ header {
   }
 
   .profile_container .teacher {
-    padding-left: 100px;
+    padding-left: 110px;
 
   }
   .profileimage {
@@ -250,7 +290,7 @@ header {
     align-content:center;
   } 
   .profile_container h1 {
-    font-size:50px;
+    font-size:80px;
   }
   .info_container {
     padding-top: 20px;
@@ -301,9 +341,12 @@ header {
 
   .section.bg-white {
     position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: baseline;
     height: 100%;
     background-color: #ffffff;
-    display:block;
+    
     
    
 }
@@ -319,8 +362,8 @@ header {
 
   .container {
     position: relative;
-    width:1200px;
-    max-width: 100%;
+    max-width:1200px;
+    width: 100%;
     display:flex;
     height:500px;
     bottom: 0px;
@@ -405,7 +448,8 @@ header {
   
 /* Footer */
   .footer {
-    
+    display:block;
+    flex-direction: column;
     background-color:#000;
     color:#fff;
   }

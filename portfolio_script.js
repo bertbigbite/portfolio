@@ -1,14 +1,19 @@
 
-function buttonClick (e) {
-    let button = e.target;
-    
-    const item = document.getElementById(button.id)
-    item.classList.toggle('hidden')
+// Function triggered when a button is clicked
+function buttonClick(e) {
+    // Find out which button was clicked
+    const button = e.target;
 
+    // The ID of the div containing item information is the same as item button ID but with '-info' on the end
+    // Work out the ID of the information div
+    const infoDivId = button.id + '-info';
+
+    // Find the information div for the item
+    const item = document.getElementById(infoDivId);
+
+    // Make it appear/disappear - toggle the hidden class
+    item.classList.toggle('hidden');
 }
-
-
-
 
 fetch('projects.json').then(function (response) {
     return response.json()
@@ -28,8 +33,12 @@ fetch('projects.json').then(function (response) {
             <br>
             <div class="jsonlinks">
             <a class="url">${projects.url}</a>
-            <button id class="show-item-info">${projects.view}</button>
+            <button id = "${projects.name}" class="show-item-info">more info</button>
             <a href="https://github.com/bertbigbite/portfolio" class="git">${projects.git}</a>
+            </div>
+            <div id="${projects.name}-info" class="hidden"> 
+            <h2> ${projects.name}</h2>
+            <p>Here is some more information about this project</p>
             </div>
         </div>`
         console.log(contents);
@@ -38,6 +47,17 @@ fetch('projects.json').then(function (response) {
 contents += "</div>";
 
 itemsDiv.innerHTML = contents;
+
+
+
+// Helped by Geoff, Find all of the buttons that have the class 'show-item-info'
+const buttons = document.querySelectorAll('.show-item-info');
+buttons.forEach(function (button) {
+    // For each button, add an 'onclick' even listener that calls the buttonClick function
+    button.addEventListener('click', buttonClick);
+})
+
+
 
 })
 
@@ -81,10 +101,3 @@ const closeModal = function () {
 
 
 
-
-
-  const buttons = document.querySelectorAll
-
-  buttons.forEach (function(buttton)) {
-    buttonClick.addEventListener('click' buttonClick)
-  }

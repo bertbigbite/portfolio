@@ -19,7 +19,7 @@
             <nav class="links">
                 <a href="index.html" class="first" alt="Home">Home</a>
                 <a href="about.html" class="second" alt="About">About</a>
-                <a href="#" class="third" alt="Portfolio">Portfolio</a>
+                <a href="portfolio.html" class="third" alt="Portfolio">Portfolio</a>
                 <a href="#" id="contactModal" class="fourth" alt="Contact">Contact</a>
             </nav>
             <span class="socials">
@@ -33,7 +33,7 @@
         <div class="profile_container"> <!-- Content holder within the section -->
             <!-- Section content -->
             <h1 class="title coder">{coder}</coder></h1>
-            <div class="profileimage"><img src="profile.png"></img></div>
+            <div class="profileimage"><img src="images/profile.png"></img></div>
             <h1 class="title teacher">teacher</h1> 
         </div>
         
@@ -65,7 +65,7 @@
 
     <section class="modal hidden">
         <div class="flex">
-          <img src="contact.png" width="50px" height="50px" alt="user" />
+          <img src="images/contact.png" width="50px" height="50px" alt="user" />
           <button class="btn-close">⨉</button>
         </div>
         <div>
@@ -74,8 +74,14 @@
             If you like what you see and would like to discuss more. Or if you would just like to connect, please get in touch!
           </p>
         </div>
-        <br>
+        
+        <label for="name">Name</label>
+        <input type="text" id = "name"/>
         <input type="email" id="email" placeholder="youremail@gmail.com" />
+        <label for="message">Comments</label>
+        <textarea id = "message"></textarea>
+        <br>
+
         <button class="btnsubmit">Submit</button>
       </section>
       
@@ -89,15 +95,24 @@
           <button class="btn-close">⨉</button>
         </div>
         <div>
-          <h3>Stay in touch</h3>
+          <h3>Project Name</h3>
           <p>
-            If you like what you see and would like to discuss more. Or if you would just like to connect, please get in touch!
+            This is the project modal
           </p>
         </div>
-        <br>
+        
+        <label for="name">Name</label>
+        <input type="text" id = "name"/>
         <input type="email" id="email" placeholder="youremail@gmail.com" />
+        <label for="message">Comments</label>
+        <textarea id = "message"></textarea>
+        <br>
+
         <button class="btnsubmit">Submit</button>
       </section>
+      
+    <div class="overlay hidden"></div>
+
 
     
     <footer class="footer"> <!-- Footer -->

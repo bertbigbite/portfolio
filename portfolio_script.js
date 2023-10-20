@@ -20,9 +20,13 @@ fetch('projects.json').then(function (response) {
 }).then(function (projects){
 
     const itemsDiv = document.querySelector ('#name')
+    const modalsDiv = document.querySelector ('#projectoverlays')
+
     let contents = '';
+    let modals = '';
   // Add the class .container to the variable contents.
-    contents += "<div class='container'>";
+    
+  contents += "<div class='container'>";
 // Iterate through each of the elements within the array, adding each one for every item
     projects.forEach(projects =>{
 // Add the .project_container class to the contents variable and then in turn each element of the object, iterating for every instance
@@ -36,17 +40,30 @@ fetch('projects.json').then(function (response) {
             <button id = "${projects.name}" class="show-item-info">more info</button>
             <a href="https://github.com/bertbigbite/portfolio" class="git">${projects.git}</a>
             </div>
-            <div id="${projects.name}-info" class="hidden"> 
-            <h2> ${projects.name}</h2>
-            <p>Here is some more information about this project</p>
-            </div>
         </div>`
+
+        modals += `<div id="${projects.name}-info" class=" overlay hidden"> 
+            <div class = "modalcontents">
+                <div class="modalheader">
+                    <h2> ${projects.name}</h2>
+                    <button class="btn-closed">⨉</button>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class=gallery>
+                    <img class="modalimage" src=${projects.image}></img>
+                    <img class="modalimage" src=${projects.image}></img>
+                    <img class="modalimage" src=${projects.image}></img>
+                </div>
+            </div>    
+        </div>`
+
         console.log(contents);
     })
 // Add the closing div 
 contents += "</div>";
 
 itemsDiv.innerHTML = contents;
+modalsDiv.innerHTML = modals;
 
 
 
@@ -58,21 +75,18 @@ buttons.forEach(function (button) {
 })
 
 
-
 })
 
 // Setting constants for the two main states for the modal
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-const projectOne = document.querySelector(".project-one");
-
 
 
 // Setting constants for the open and close buttons
 const openContactBtn = document.querySelector(".fourth");
 const closeContactBtn = document.querySelector(".btn-close");
 const openContactBtnTwo = document.querySelector(".contact");
-const openProjectOneBtn = document.querySelector(".open-project");
+const closeProjectModalBtn = document.querySelector(".btn-close");
 
 // Creating a function for opening the modal, removes the hidden classes to reveal the modal
 // Function used to apply class to multiple elements at a time
@@ -88,16 +102,17 @@ const closeModal = function () {
     overlay.classList.add("hidden");
   };
 
-  const openProject = function () {
-    projectOne.classList.remove("hidden");
-    overlay.classList.remove("hidden");
+  const closeProjectModal = function () { 
+    modal.classList.add("hidden");
   };
+
+  
 // event listener, looking for the click, triggers the openModal function
   openContactBtn.addEventListener("click", openModal);
 // event listener, looking for the click, triggers the closeModal function
   closeContactBtn.addEventListener("click", closeModal);
 
-  openProjectOneBtn.addEventListener("click", openProject);
+  closeProjectModalBtn.addEventListener("click", closeProjectModal);
 
 
 

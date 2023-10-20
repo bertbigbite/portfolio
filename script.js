@@ -43,7 +43,7 @@ const projectOne = document.querySelector(".project-one");
 const openContactBtn = document.querySelector(".fourth");
 const closeContactBtn = document.querySelector(".btn-close");
 const openContactBtnTwo = document.querySelector(".contact");
-const openProjectOneBtn = document.querySelector(".open-project");
+
 
 // Creating a function for opening the modal, removes the hidden classes to reveal the modal
 // Function used to apply class to multiple elements at a time
@@ -63,12 +63,14 @@ const closeModal = function () {
     projectOne.classList.remove("hidden");
     overlay.classList.remove("hidden");
   };
+
+  
 // event listener, looking for the click, triggers the openModal function
   openContactBtn.addEventListener("click", openModal);
 // event listener, looking for the click, triggers the closeModal function
   closeContactBtn.addEventListener("click", closeModal);
 
-  openProjectOneBtn.addEventListener("click", openProject);
+  
 
 
 

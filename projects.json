@@ -2,7 +2,7 @@
     {
       "name": "Project One",
       "desc": "This is project one. It's a project that I worked on",
-      "image": "images/thumbnail1.png",
+      "image": "images/5.png",
       "url": "<i class='fa-solid fa-globe'></i>",
       "view": "#",
       "git": "<i class='fa-brands fa-square-github'></i>"
@@ -11,7 +11,7 @@
     {
         "name": "Project Two",
         "desc": "This is project one. It's a project that I worked on",
-        "image": "images/thumbnail2.png",
+        "image": "images/1.png",
         "url": "<i class='fa-solid fa-globe'></i>",
         "view": "#",
         "git": "<i class='fa-brands fa-square-github'></i>"
@@ -20,7 +20,7 @@
     {
         "name": "Project Three",
         "desc": "This is project one. It's a project that I worked on",
-        "image": "images/thumbnail3.png",
+        "image": "images/2.png",
         "url": "<i class='fa-solid fa-globe'></i>",
         "view": "#",
         "git": "<i class='fa-brands fa-square-github'></i>"
@@ -28,7 +28,7 @@
     {
         "name": "Project Four",
         "desc": "This is project one. It's a project that I worked on",
-        "image": "images/thumbnail3.png",
+        "image": "images/3.png",
         "url": "<i class='fa-solid fa-globe'></i>",
         "view": "#",
         "git": "<i class='fa-brands fa-square-github'></i>"
@@ -36,7 +36,7 @@
   {
         "name": "Project Five",
         "desc": "This is project one. It's a project that I worked on",
-        "image": "images/thumbnail3.png",
+        "image": "images/4.png",
         "url": "<i class='fa-solid fa-globe'></i>",
         "view": "#",
         "git": "<i class='fa-brands fa-square-github'></i>"
@@ -45,7 +45,7 @@
     {
       "name": "Project Six",
       "desc": "This is project one. It's a project that I worked on",
-      "image": "images/thumbnail3.png",
+      "image": "images/5.png",
       "url": "<i class='fa-solid fa-globe'></i>",
       "view": "#",
       "git": "<i class='fa-brands fa-square-github'></i>"
